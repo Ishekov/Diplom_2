@@ -34,7 +34,7 @@ public class ExistingUserLoginTest {
 
     @Test
     @DisplayName("Создание пользователя с последующей авторизацией")
-    public void existingUserLogin() {
+    public void existingUserLoginTest() {
         ValidatableResponse resp = userApi.createUser(newUser);
         ValidatableResponse loginResp = userApi.loginUser(Authorization.from(newUser));
 

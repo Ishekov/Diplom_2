@@ -16,8 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 //+
 @DisplayName("Создание заказа без ингредиентов")
 public class CreateOrderWithoutIngredientsTest {
-    private OrderCreate orderCreate;
-    private String accessToken;
+        private String accessToken;
     private UserApi userApi;
     private UserCreate newUser;
     private OrderApi orderApi;
@@ -26,7 +25,6 @@ public class CreateOrderWithoutIngredientsTest {
     public void init() {
         orderApi = new OrderApi();
         userApi = new UserApi();
-        orderCreate = new OrderCreate();
         newUser = UserGeneratorFaker.userGeneratorFaker();
         ValidatableResponse resp = userApi.createUser(newUser);
         accessToken = resp.extract().path("accessToken");
@@ -41,7 +39,7 @@ public class CreateOrderWithoutIngredientsTest {
 
     @Test
     @DisplayName("Создание заказа: без ингредиентов")
-    public void authorizedUserCreateOrderTest() {
+    public void createOrderWithoutIngredientsTest() {
 
         ValidatableResponse orderResp = orderApi.createOrderWithoutIngredients(accessToken);
 

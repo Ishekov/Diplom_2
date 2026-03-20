@@ -33,7 +33,7 @@ public class UserDubleAddTest {
 
     @Test
     @DisplayName("Создать пользователя, который уже зарегистрирован")
-    public void createDataUser() {
+    public void userDubleAddTest() {
         userApi.createUser(newUser);
         ValidatableResponse resp = userApi.createUser(newUser);
 

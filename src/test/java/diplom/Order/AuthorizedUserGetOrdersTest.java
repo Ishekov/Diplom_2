@@ -44,7 +44,7 @@ public class AuthorizedUserGetOrdersTest {
 
     @Test
     @DisplayName("Получение заказов конкретного пользователя: авторизованный пользователь")
-    public void authorizedUserCreateOrderTest() {
+    public void authorizedUserGetOrdersTest() {
         List<String> ingredients = new ArrayList<>(Arrays.asList(
                 "61c0c5a71d1f82001bdaaa6d",
                 "61c0c5a71d1f82001bdaaa6f",

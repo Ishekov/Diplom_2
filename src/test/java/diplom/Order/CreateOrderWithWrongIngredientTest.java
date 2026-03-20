@@ -43,7 +43,7 @@ public class CreateOrderWithWrongIngredientTest {
 
     @Test
     @DisplayName("Создание заказа: с неверными ингредиентами")
-    public void authorizedUserCreateOrderTest() {
+    public void createOrderWithWrongIngredientTest() {
         List<String> ingredients = new ArrayList<>(Arrays.asList(
                 "wrong_id_1",
                 "wrong_id_2",

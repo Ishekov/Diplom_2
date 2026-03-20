@@ -30,7 +30,7 @@ public class UserAddTest {
 
     @Test
     @DisplayName("Создать уникального пользователя")
-    public void createDataUser() {
+    public void userAddTest() {
 
         ValidatableResponse resp = userApi.createUser(newUser);
 

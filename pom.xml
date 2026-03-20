@@ -11,12 +11,12 @@
 
     <!-- ========== ГЛОБАЛЬНЫЕ НАСТРОЙКИ ========== -->
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>   <!-- Версия Java -->
-        <maven.compiler.target>17</maven.compiler.target>   <!-- Целевая версия Java -->
+        <maven.compiler.source>11</maven.compiler.source>   <!-- Версия Java -->
+        <maven.compiler.target>11</maven.compiler.target>   <!-- Целевая версия Java -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aspectj.version>1.9.9.1</aspectj.version>          <!-- Версия AspectJ -->
-        <allure.version>2.15.0</allure.version>              <!-- Версия Allure -->
-        <junit.version>5.9.2</junit.version>                 <!-- Версия JUnit -->
+        <aspectj.version>1.9.22</aspectj.version>          <!-- Версия AspectJ -->
+        <allure.version>2.21.0</allure.version>              <!-- Версия Allure -->
+        <junit.version>5.10.0</junit.version>                 <!-- Версия JUnit -->
     </properties>
 
     <!-- ========== ЗАВИСИМОСТИ (БИБЛИОТЕКИ) ========== -->
@@ -116,7 +116,7 @@
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>  <!-- Для работы Allure -->
-                        <version>${aspectj.version}</version>
+                        <version>1.9.21.1</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -125,7 +125,7 @@
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>2.10.0</version>
+                <version>2.12.0</version>
                 <configuration>
                     <reportVersion>2.15.0</reportVersion>  <!-- Версия отчета -->
                 </configuration>

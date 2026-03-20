@@ -44,7 +44,7 @@ public class UnauthorizedUserGetOrdersTest {
 
     @Test
     @DisplayName("Создание заказа: без авторизации")
-    public void authorizedUserCreateOrderTest() {
+    public void unauthorizedUserGetOrdersTest() {
         List<String> ingredients = new ArrayList<>(Arrays.asList(
                 "61c0c5a71d1f82001bdaaa6d",
                 "61c0c5a71d1f82001bdaaa6f",

@@ -39,7 +39,7 @@ public class UserUnauthorizedUpdateTest {
 
     @Test
     @DisplayName("Изменение имени неавторизованного пользователя")
-    public void testChangeNameUnauthorized(){
+    public void changeNameUnauthorizedTest(){
         newUser.setName(faker.name().fullName().replace(" ", ""));
 
         ValidatableResponse updateResp = userApi.updateUserWithoutAuth(Authorization.from(newUser));
@@ -56,7 +56,7 @@ public class UserUnauthorizedUpdateTest {
 
     @Test
     @DisplayName("Изменение имейла неавторизованного пользователя")
-    public void testChangeEmailUnauthorized() {
+    public void changeEmailUnauthorizedTest() {
         newUser.setEmail(faker.internet().emailAddress());
 
         ValidatableResponse updateResp = userApi.updateUserWithoutAuth(Authorization.from(newUser));
@@ -73,7 +73,7 @@ public class UserUnauthorizedUpdateTest {
 
     @Test
     @DisplayName("Изменение пароля неавторизованного пользователя")
-    public void  testChangePasswordUnauthorized() {
+    public void  changePasswordUnauthorizedTest() {
         String firstPassword = newUser.getPassword();
         newUser.setPassword(faker.internet().password(8, 16, true, true, true));
 

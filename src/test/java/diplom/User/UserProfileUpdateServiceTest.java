@@ -38,7 +38,7 @@ public class UserProfileUpdateServiceTest {
 
     @Test
     @DisplayName("Изменение имени авторизованного пользователя")
-    public void testChangeNameForAuthorizedUser(){
+    public void changeNameForAuthorizedUserTest(){
         String firstName = newUser.getName();
         newUser.setName(faker.name().fullName().replace(" ", ""));
 
@@ -54,7 +54,7 @@ public class UserProfileUpdateServiceTest {
 
     @Test
     @DisplayName("Изменение имейла авторизованного пользователя")
-    public void testChangeEmailForAuthorizedUser() {
+    public void changeEmailForAuthorizedUserTest() {
         String firstEmail = newUser.getEmail();
         newUser.setEmail(faker.internet().emailAddress());
 
@@ -70,7 +70,7 @@ public class UserProfileUpdateServiceTest {
 
     @Test
     @DisplayName("Изменение пароля авторизованного пользователя")
-    public void  testChangePasswordForAuthorizedUser() {
+    public void  changePasswordForAuthorizedUserTest() {
         String firstPassword = newUser.getPassword();
         newUser.setPassword(faker.internet().password(8, 16, true, true, true));
 
